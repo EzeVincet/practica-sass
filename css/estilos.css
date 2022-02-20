@@ -128,8 +128,7 @@ body .header .navbar .dropdown-menu a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ------------------------------------------------------------------------------------ */
-/* Comienzo de las media */
+/* Comienzo de las media query */
 @media only screen and (max-width: 320px) {
   .footer .links {
     display: none;
