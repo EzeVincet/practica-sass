@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +17,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;300&family=Montserrat:ital,wght@1,200&family=Roboto+Slab&display=swap"
         rel="stylesheet">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Bootstrap css -->
@@ -21,17 +24,17 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- css propio -->
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Tamberos Unidos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Mercado</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-index ">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-pages">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="#">
-                    <img src="media/img/logo.png" alt="" width="150" height="100">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../media/img/logo.png" alt="" width="150" height="100">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -41,7 +44,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active m-3" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active m-3" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle m-3" href="#" id="navbarDropdownMenuLink" role="button"
@@ -49,100 +52,64 @@
                                 Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item mb-3 " href="page/silos.html">Silos</a></li>
-                                <li><a class="dropdown-item mb-3 " href="page/picado.html">Picado</a></li>
-                                <li><a class="dropdown-item mb-3 " href="page/mercado.html">Minimercado</a></li>
-                                <!-- <li><a class="dropdown-item mb-3 " href="#">Combustible</a></li> -->
+                                <li><a class="dropdown-item mb-3 " href="silos.html">Silos</a></li>
+                                <li><a class="dropdown-item mb-3 " href="picado.html">Picado</a></li>
+                                <li><a class="dropdown-item mb-3 " href="mercado.html">Minimercado</a></li>
+                                <li><a class="dropdown-item mb-3 " href="#">Combustible</a></li>
                             </ul>
                         </li>
                         <li class="nav-item m-3">
-                            <a class="nav-link" href="page/personal.html">Personal</a>
+                            <a class="nav-link" href="personal.html">Personal</a>
                         </li>
                         <li class="nav-item m-3">
-                            <a class="nav-link" href="page/ubicacion.html">Ubicación</a>
+                            <a class="nav-link" href="ubicacion.html">Ubicación</a>
                         </li>
                         <li class="nav-item m-3">
-                            <a class="nav-link" href="page/contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
         </nav>
-        <div class="hero-index">
-            <div class="titulo-hero">
-                <h1>TAMBEROS UNIDOS</h1>
-            </div>
-            <p>Cooperativa de Tamberos de Coronel Charlone</p>
-        </div>
     </header>
     <!-- --------------------MAIN -------------------------- -->
-    <main class="main">
-        <section class="novedades">
-            <h2 class="text-center  p-3">Novedades</h2>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h3>Se largó la campaña 2022</h3>
-                        <hr>
-                        <p>Para considerar un maíz conveniente para la producción de silaje de calidad debe contener no
-                            menos del 30%
-                            de granos sobre la base de materia seca, debido a lo cual se lo considera una mezcla de
-                            forraje y grano, siendo
-                            utilizada como suplemento energético de la ración o como complemento de la dieta. Como en el
-                            caso de planteos
-                            sobre pastoreos de otoño, los que presentan un desbalance nutricional en esa época, con
-                            elevadas cantidades de
-                            nitrógeno no proteico y baja concentración de hidratos de carbono solubles.
-                        </p>
-                        <p>
-                            Esto provoca que al ser ingeridas por el animal, exista un excesivo gasto de energía a nivel
-                            hepático para neutralizar ese efecto y desintoxicar el organismo del nitrógeno sobrante,
-                            sumado al hecho que los animales pierden
-                            eficiencia de utilización por la poca energía disponible en el alimento, por lo que la
-                            suplementación con concentrados energéticos como el silaje de maíz y sorgo, se hace
-                            importante.
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="media/img/campaña.jpg" alt="Campaña silo 2022" width="100%">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mt-5">
-                        <img src="media/img/silos.jpg" alt="Campaña silo 2022" width="100%">
-                    </div>
-                    <div class="col-lg-8 mt-5">
-                        <h3>Expeller ¿Cómo utilizarlos?</h3>
-                        <hr>
-                        <p>Las cantidades a suministrar dependerán básicamente del equilibrio de la dieta en proteínas,
-                            por lo tanto se debe considerar especialmente el aporte proteico de los demás ingredientes.
-                            No obstante, en una dieta bien balanceada, para que estos expellers puedan aportan buena
-                            fibra se los podría incorporar a una tasa equivalente de hasta en un 25% de la MS total
-                            aportada (4 a 4.5 kg MS/vaca/día). Son aptas para todas las categorías de ganado. Sin
-                            embargo, para terneros de menos de 100-120 kg y vacas de alta producción (más de 25 lts/d)
-                            como fuente de proteínas se prefiere el expeller de soja, ya que posee un perfil de
-                            aminoácidos más adecuado para los requerimientos de estas categorías.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mt-5">
-                        <h3>Nuevo Consejo Administrativo</h3>
-                        <hr>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque eaque qui dolorem ex
-                            eius numquam ratione voluptatum voluptate! Quod autem animi illum deleniti facilis ipsam
-                            dolor neque! Blanditiis, ipsam.</p>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <img src="media/img/Cooperativa.jpg" alt="" width="100%">
-                    </div>
-                </div>
+    <main class="combustible">
+        <section class="container">
+            <div class="text-center pt-5">
+                <h1>Estación de Servicio</h1>
+                <p>Cargá combustible con tu número de usuario</p>
             </div>
         </section>
+        <div class="container-grid">
+            <div class="item1"><h3>Despacho de Combustible</h3>
+                <img src="../media/img/surtidor.png" alt="">
+            </div>
+            <div class="item2"><img class="lax lax_preset_slideX:746:-292 lax_preset_fadeOut:186.5:0" src="../media/img/manguera.png" alt=""></div>
+            <div class="item3">
+                <h3>Transportistas lácteos</h3>
+                <img class="lax lax_preset_blurIn:232:38 lax_preset_fadeIn:148:0" src="../media/img/transporte.png" alt="">
+            </div>
+            <div class="item4">
+                <img class="lax lax_preset_zigzag:170:200" src="../media/img/camioneta.png" alt="">
+                <h3>Despacho automático para clientes</h3>
+            </div>
+            <div class="item5">
+                <img class="lax lax_preset_fadeIn:138:0" src="../media/img/cisterna.png" alt="">
+                <h3>Carga tu cisterna</h3>
+            </div>
+            <div class="item6">
+                <img class="lax lax_preset_seesaw:140:20 lax_preset_fadeInOut:172:0 lax_preset_scaleOut:172:0.6"  src="../media/img/surtidor-panel.png" alt=""> 
+                <h3>Colocá tu usuario para cargar</h3>
+            </div>
+            
+            <div class="barra"></div>
+          </div>
     </main>
     <!-- ------------------------- FOOTER ------------------------- -->
     <footer>
-        <div class="pt-5 pb-5 footer">
+        <div class="mt-5 pt-5 pb-5 footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-xs-12 about-company">
@@ -171,7 +138,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-xs-12 location">
-                        <h3 class="mt-lg-0 mt-sm-4 ">Ubicación</h3>
+                        <h3 class="mt-lg-0 mt-sm-4 mt-4">Ubicación</h3>
                         <p>Anzoategui 188 esquina José María Blanco</p>
                         <p class="mb-1"><i class="fa fa-phone p-1"></i><a href="tel:+5403388490208">(03388)490208</a>
                         </p>
@@ -193,6 +160,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+<script>
+    window.onload = function () {
+      lax.init()
+  
+      // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+        return window.scrollY
+      })
+  
+      // Add animation bindings to elements
+      lax.addElements('.selector', {
+        scrollY: {
+          translateX: [
+            ["elInY", "elCenterY", "elOutY"],
+            [0, 'screenWidth/2', 'screenWidth'],
+          ]
+        }
+      })
+    }
+  </script>
 </body>
 
 </html>

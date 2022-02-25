@@ -1,0 +1,47 @@
+@mixin encabezado ($img, $altura) {
+    width: 100%;
+    height: $altura#{px};
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(162, 100%, 74%, 0.555), hsla(96, 8%, 12%, 0.555)), url(../media/img/#{$img}.jpg);
+    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.555), hsla(96, 8%, 12%, 0.555)), url(../media/img/#{$img}.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar-index {
+    background-color: $color1 !important;
+}
+
+// .navbar-pages {
+//     background-color: $color2 !important;
+// }
+
+.navbar {
+    a {
+        color: $color-blanco !important;
+        font-size: 1.1rem;
+        font-family: $fuente-h2;
+
+        &:hover {
+            color: $color4 !important;
+            background-color: $color6;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            transition: all 0.9s 0s ease;
+        }
+    }
+
+    .nav-item {
+        font-size: 100%;
+    }
+
+    .dropdown-menu {
+        color: $color-blanco !important;
+        background-color: $color2 !important;
+        box-shadow: 10px 9px 20px 0px $color-shadow;
+
+        a:hover {
+            background-color: $color6 !important;
+        }
+    }
+}
