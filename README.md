@@ -1,5 +1,8 @@
 # practica-sass
 
+En todas las páginas se respeta la jerarquia h1, h2, h3 .........
+
+Los títulos de las páginas se componen por el nombre de la web | breve descripción de la página
 
 index.html ----------------------
 
@@ -10,10 +13,10 @@ index.html ----------------------
   "copyright" content="Propietario del contenido y marca"
   
   Como titulo 
-  Tamberos Unidos | Cooperativa láctea de Coronel Charlone
+  "Tamberos Unidos | Cooperativa láctea de Coronel Charlone"
   
   Encabezado
-  TAMBEROS UNIDOS
+  "TAMBEROS UNIDOS"
   
   
 
@@ -25,10 +28,10 @@ meta name="author" content="Cooperativa-Tamberos"
 meta name="copyright" content="Propietario del contenido y marca"
 
 Como titulo 
-Tamberos Unidos | Ubicación Geográfica de la Cooperativa
+"Tamberos Unidos | Ubicación Geográfica de la Cooperativa"
 
 Encabezado
-Ubicación Geográfica
+"Ubicación Geográfica"
 
 Silo.html --------------------------------
 
@@ -38,10 +41,10 @@ meta name="author" content="Cooperativa-Tamberos"
 meta name="copyright" content="Propietario del contenido y marca"
 
 Como Titulo
-Tamberos Unidos | Servicio de Silos para productores lácteos
+"Tamberos Unidos | Servicio de Silos para productores lácteos"
 
 Encabezado
-Servicios al productor
+"Servicios al productor"
 
 picado.html --------------------------------------
 
@@ -51,34 +54,36 @@ meta name="author" content="Cooperativa-Tamberos"
 meta name="copyright" content="Propietario del contenido y marca"
 
 Como titulo
-Tamberos Unidos | Picado de Forraje para asociados
+"Tamberos Unidos | Picado de Forraje para asociados"
 
 Encabezado
-Servicio de Picado
+"Servicio de Picado"
 
 Personal.html ---------------------------------------
+
 meta name="description" content="Personal de la Cooperativa de Tamberos de Coronel Charlone" 
 meta name="keywords" content="silo, silaje, alimentación, lechería, tambos, silo, pellet, maiz, personal"
 meta name="author" content="Cooperativa-Tamberos"
 meta name="copyright" content="Propietario del contenido y marca"
 
 Como titulo
-Tamberos Unidos | Personal de la Cooperativa Láctea
+"Tamberos Unidos | Personal de la Cooperativa Láctea"
 
 Encabezado
-Equipo de trabajo
+"Equipo de trabajo"
 
 mercado.html -------------------------------------------
+
 meta name="description" content="Ofrecemos los mejores productos locales y fabricados en la planta de quesos de la localidad" 
 meta name="keywords" content="alimentación, lechería, quesos, fiambre, jamon, charlone"
 meta name="author" content="Cooperativa-Tamberos"
 meta name="copyright" content="Propietario del contenido y marca"
 
 Como titulo
-Tamberos Unidos | Mercado de la Cooperativa de Tamberos
+"Tamberos Unidos | Mercado de la Cooperativa de Tamberos"
 
 Encabezado
-MERCADO DE LA COOP
+"MERCADO DE LA COOP"
 
 contacto.html -----------------------------------------
 
@@ -87,10 +92,10 @@ meta name="keywords" content="alimentación, tambos, cuenca lechera, lechería, 
 meta name="author" content="Cooperativa-Tamberos"
 
 Como titulo
-Tamberos Unidos | Formulario de contacto
+"Tamberos Unidos | Formulario de contacto"
 
 Encabezado
-contacto
+"contacto"
 
 
-En todas las páginas se respeta la jerarquia h1, h2, h3 .........
+
