@@ -2,6 +2,7 @@
 
 
 index.html ----------------------
+
  Agregue como descripción lo siguente "Página de la Cooperativa de Tamberos Unidos de Coronel Charlone, podrás encontrar información relevante sobre los servicios que ofrecemos"
  y en los "keywords" content="cooperativismo, lechería, tambos, buenos aires, charlone"
   Luego agregue los meta author y copyright 
