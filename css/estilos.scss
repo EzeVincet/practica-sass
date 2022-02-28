@@ -48,30 +48,13 @@ body {
         font-family: $fuente-h3;
     }
 
-    // /* -----------------header ---------------*/
+    // /* -----------------header  index---------------*/
     .header {
         @import "encabezado";
         @include encabezado(fondo, 600);
-        @include texto-hero;
-
-        .hero-index {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10vh;
-
-            .titulo-hero {
-                color: #fff;
-            }
-
-            p {
-                color: #fff;
-            }
-        }
-
+        @include texto-hero;        
         // Fin del Header---------------------
     }
-
     // ---------------MAIN-----------------
     .main {
         width: 100%;

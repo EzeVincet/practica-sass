@@ -8,34 +8,25 @@
     background-attachment: fixed;
 }
 
+// extend
 @mixin texto-hero{    
-    .hero-index {
+   .hero-index {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10vh;
-
         h1 {
             font-size: $xl;
+            color: $color-blanco;
         }
-
-        .titulo-hero {
-            color: #fff;
-        }
-
         p {
-            color: #fff;
+            color: $color-blanco;
         }
     }    
 }
 .navbar-index {
     background-color: $color1 !important;
 }
-
-// .navbar-pages {
-//     background-color: $color2 !important;
-// }
-
 .navbar {
     a {
         color: $color-blanco !important;
