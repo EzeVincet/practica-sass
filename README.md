@@ -90,7 +90,7 @@ Como titulo
 Tamberos Unidos | Formulario de contacto
 
 Encabezado
-Contacto
---------------------------------------------------
+contacto
+
 
 En todas las páginas se respeta la jerarquia h1, h2, h3 .........
