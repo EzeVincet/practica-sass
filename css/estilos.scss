@@ -13,8 +13,7 @@
     text-shadow: 1px 1px 2px $color4;
 }
 
-$tamanio-letra:(
-    xl: 3.5rem,
+$tamanio-letra:(xl: 3.5rem,
     m: 2.5rem,
     s: 1.5rem,
     ss: 1.3rem,
@@ -23,7 +22,7 @@ $tamanio-letra:(
 // h2 = m
 // h3 = s
 // h4 = ss
-$xl: map-get($tamanio-letra, xl); 
+$xl: map-get($tamanio-letra, xl);
 $m: map-get($tamanio-letra, m);
 $s: map-get($tamanio-letra, s);
 $ss: map-get($tamanio-letra, ss);
@@ -50,9 +49,10 @@ body {
     .header {
         @import "encabezado";
         @include encabezado(fondo, 600);
-        @include texto-hero;        
+        @include texto-hero;
         // Fin del Header---------------------
     }
+
     // ---------------MAIN-----------------
     .main {
         width: 100%;
@@ -203,7 +203,7 @@ body {
     .card-block {
         .btn-silo {
             color: $color-blanco;
-            background-color:$color2;
+            background-color: $color2;
             border: 0;
 
             &:hover {
@@ -254,6 +254,7 @@ body {
             @extend %texto-centrado;
             background-color: $color5;
             color: $color-blanco;
+
             h2 {
                 font-size: $m;
             }
@@ -345,8 +346,8 @@ body {
     .text-center {
         @extend %texto-centrado;
         background-color: $color1;
-        color: $color-footer;  
-        text-shadow: none;     
+        color: $color-footer;
+        text-shadow: none;
     }
 }
 
@@ -364,7 +365,8 @@ body {
     .encabezado-list,
     .pie-list {
         background-color: $color1;
-        h3{
+
+        h3 {
             font-size: $s;
         }
     }
@@ -374,9 +376,10 @@ body {
     }
 
     .list-group-item {
-        h4{
+        h4 {
             font-size: $ss;
         }
+
         img {
             width: 50%;
             border-radius: 50%;
@@ -389,17 +392,21 @@ body {
     @include encabezado(fondo-ubicacion, 600);
     @include texto-hero;
 }
-.header-contacto{
+
+.header-contacto {
     @import "encabezado";
 }
+
 .container {
     .grid-ubicacion {
-        h2{
+        h2 {
             margin-top: 2rem;
         }
+
         p {
-            text-align: justify;        
+            text-align: justify;
         }
+
         iframe {
             width: 100%;
             height: 350px;
@@ -408,13 +415,15 @@ body {
 }
 
 
-.contacto-contenedor{
-    h1{
+.contacto-contenedor {
+    h1 {
         font-size: $s;
     }
-    h2{
+
+    h2 {
         font-size: $ss;
     }
+
     .contacto-frm {
         display: flex;
         justify-content: center;
@@ -423,6 +432,6 @@ body {
         background-color: $color8;
     }
 }
- 
+
 
 @import "medias";
