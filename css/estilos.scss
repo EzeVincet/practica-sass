@@ -7,9 +7,7 @@
     text-decoration: none;
 }
 
-@mixin texto-centrado {
-    background-color: $color5;
-    color: $color-blanco;
+%texto-centrado {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     text-shadow: 1px 1px 2px $color4;
@@ -253,8 +251,9 @@ body {
 
     .text-picado {
         .text-center {
-            @include texto-centrado;
-
+            @extend %texto-centrado;
+            background-color: $color5;
+            color: $color-blanco;
             h2 {
                 font-size: $m;
             }
@@ -338,13 +337,16 @@ body {
         }
 
         .col-lg-4 {
-            margin: 0px !important;
+            margin: 0px;
             padding: 20px;
         }
     }
 
     .text-center {
-        @include texto-centrado;
+        @extend %texto-centrado;
+        background-color: $color1;
+        color: $color-footer;  
+        text-shadow: none;     
     }
 }
 
