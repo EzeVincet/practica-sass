@@ -1,58 +1,66 @@
+// encabezado, le paso 2 parametros para modificar la imagen del header y la altura según la página
 @mixin encabezado ($img, $altura) {
     width: 100%;
     height: $altura#{px};
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(162, 100%, 74%, 0.555), hsla(96, 8%, 12%, 0.555)), url(../media/img/#{$img}.jpg);
-    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.555), hsla(96, 8%, 12%, 0.555)), url(../media/img/#{$img}.jpg);
+    background: -webkit-linear-gradient(to right, hsla(162, 100%, 74%, 0.555), hsla(96, 8%, 12%, 0.555)),
+    url(../media/img/#{$img}.jpg);
+    background: linear-gradient(to right, hsla(162, 100%, 74%, 0.555), hsla(96, 8%, 12%, 0.555)),
+    url(../media/img/#{$img}.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-
-// extend
-@mixin texto-hero{    
-   .hero-index {
+// correspondiente al texto en los Hero
+@mixin texto-hero {
+    .hero-index {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10vh;
+
         h1 {
             font-size: $xl;
             color: $color-blanco;
         }
+
         p {
             color: $color-blanco;
         }
-    }    
-}
-.navbar-index {
-    background-color: $color1;
-}
-.navbar {
-    a {
-        color: $color-blanco !important;
-        font-size: 1.1rem;
-        font-family: $fuente-h2;
-
-        &:hover {
-            color: $color4 !important;
-            background-color: $color6;
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
-            transition: all 0.9s 0s ease;
-        }
     }
+}
+// barra del menú en todas las páginas 
+@mixin barra-menu {
+    .navbar-index {
+        background-color: $color1;
 
-    .nav-item {
-        font-size: 100%;
-    }
+        .navbar-nav, .nav-link{
+            a {
+                color: $color-blanco ;
+                font-size: 1.1rem;
+                font-family: $fuente-h2;
 
-    .dropdown-menu {
-        color: $color-blanco !important;
-        background-color: $color2 !important;
-        box-shadow: 10px 9px 20px 0px $color-shadow;
+                &:hover {
+                    color: $color4 ;
+                    background-color: $color6;
+                    border-top-left-radius: 1rem;
+                    border-top-right-radius: 1rem;
+                    transition: all 0.9s 0s ease;
+                }
 
-        a:hover {
-            background-color: $color6 !important;
+            }
+
+            .nav-item {
+                font-size: 100%;                
+            }
+
+            .dropdown-menu {
+                color: $color-blanco ;
+                background-color: $color2;
+                box-shadow: 10px 9px 20px 0px $color-shadow;
+
+                a:hover {
+                    background-color: $color6;
+                }
+            }
         }
     }
 }

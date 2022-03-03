@@ -1,0 +1,65 @@
+body {
+    .footer {
+        background-color: $color-footer;
+        color: $color-blanco;
+
+        h3 {
+            font-size: $s;
+        }
+
+        .about-company {
+            a {
+                @include link-a;
+
+                &:hover {
+                    color: $color6;
+                }
+            }
+
+            i {
+                font-size: 25px;
+            }
+        }
+
+        .links {
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    a {
+                        @include link-a;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $color6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .location {
+            a {
+                @include link-a;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $color6;
+                }
+            }
+            p{
+                i {
+                    font-size: 18px;
+                }
+            }
+           
+        }
+
+        .copyright {
+            p {
+                border-top: 1px solid rgba(255, 255, 255, .1);
+            }
+        }
+    }
+}

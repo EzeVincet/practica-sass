@@ -1,0 +1,300 @@
+@mixin link-a {
+    color: $color-blanco;
+    transition: color .2s;
+    text-decoration: none;
+}
+
+%texto-centrado {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-shadow: 1px 1px 2px $color4;
+}
+
+$tamanio-letra:(
+    xl: 3.5rem,
+    m: 2.5rem,
+    s: 1.5rem,
+    ss: 1.3rem,
+);
+// h1 = xl
+// h2 = m
+// h3 = s
+// h4 = ss
+$xl: map-get($tamanio-letra, xl);
+$m: map-get($tamanio-letra, m);
+$s: map-get($tamanio-letra, s);
+$ss: map-get($tamanio-letra, ss);
+
+
+main {
+
+    // contenedor de picado.html
+    .picado {
+        .text-picado {
+            .text-center {
+                @extend %texto-centrado;
+                background-color: $color5;
+                color: $color-blanco;
+
+                h2 {
+                    font-size: $m;
+                }
+
+                .img-picadora img {
+                    width: 90%;
+                }
+            }
+        }
+
+        .frm-video {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+
+            .video-picado {
+                iframe {
+                    width: 560px;
+                    height: 315px;
+                }
+            }
+
+            h3 {
+                font-size: $s;
+            }
+
+            .contacto-grid {
+                margin-bottom: 4rem;
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 4rem;
+
+                label {
+                    margin-top: 0.5rem;
+                }
+
+                input {
+                    margin-bottom: 0.5rem;
+                }
+
+                .inp-form {
+                    &:hover {
+                        border: none;
+                        background: $color6;
+                        color: $color-blanco;
+                        padding: 10px;
+                        font-size: 18px;
+                        border-radius: 5px;
+                        position: relative;
+                        box-sizing: border-box;
+                        transition: all 500ms ease;
+                    }
+
+                    &:focus {
+                        border: none;
+                        background: $color2;
+                        color: $color-blanco;
+                        padding: 10px;
+                        font-size: 18px;
+                        border-radius: 5px;
+                        position: relative;
+                        transition: all 500ms ease;
+                    }
+                }
+
+                .btn-formulario {
+                    input {
+                        background: $color2;
+                        color: $color-blanco;
+                        padding: 0.7rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    // contenedor usado en mercado y ubicacion
+    .container {
+        .text-center {
+            @extend %texto-centrado;
+            background-color: $color1;
+            color: $color-footer;
+            text-shadow: none;
+            font-size: $m;
+        }
+
+        .row {
+            img {
+                width: 100%;
+                height: 350px;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all 0.9s 0s ease;
+                    box-shadow: 10px 9px 20px 0px $color-shadow;
+                    border: 2px solid $color-blanco;
+
+                }
+            }
+
+            .col-lg-4 {
+                margin: 0px;
+                padding: 20px;
+            }
+        }
+        
+        // pagina de ubicacion
+        .grid-ubicacion {
+            h2 {
+                margin-top: 2rem;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            iframe {
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+    //fin container  
+
+    //Correspondiente a Personal.html
+    .personal-list {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .encabezado-list,
+        .pie-list {
+            background-color: $color1;
+
+            h3 {
+                font-size: $s;
+            }
+        }
+
+        .list-group-item {
+            h4 {
+                font-size: $ss;
+            }
+
+            img {
+                width: 50%;
+                border-radius: 50%;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    // página de contacto
+    .contacto-contenedor {
+        h1 {
+            font-size: $s;
+        }
+
+        h2 {
+            font-size: $ss;
+        }
+
+        .contacto-frm {
+            display: flex;
+            justify-content: center;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: $color8;
+        }
+    }
+}
+
+@mixin contenedor_index_silo {
+    // ---------------Clase main usada en index y silo----------------
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .novedades {
+            width: 80%;
+            margin-top: -143px;
+            background-color: $color-blanco;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            /* Sombra en el contenedor central */
+            box-shadow: 1px -13px 40px -5px $color-shadow;
+            -webkit-box-shadow: 1px -13px 40px -5px $color-shadow;
+            -moz-box-shadow: 1px -13px 40px -5px $color-shadow;
+
+            .text-center {
+                background-color: $color5;
+                color: $color-blanco;
+                @extend %texto-centrado;
+
+                h2 {
+                    font-size: $s;
+                }
+            }
+
+            .row {
+                h3 {
+                    font-size: $s;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+            // ubicado en silo.html
+            .jumbotron {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 300px;               
+                background-image: url(../media/img/silos-banner.svg);
+                background-size: cover;
+                background-position: center;
+                border-radius: 0;
+               
+                h2 {
+                    color: $color4;
+                    padding-top: 2rem;
+                    text-shadow: none;
+                }
+
+                p {
+                    color: $color4;
+                    text-shadow: none;
+                }
+            }
+
+            .card-silo {
+                margin-top: 3rem;
+            }
+
+            .card-silo {
+                img {
+                    width: 100%;
+                    height: 300px;
+                }
+
+                .card-block {
+                    .btn-silo {
+                        color: $color-blanco;
+                        background-color: $color2;
+                        border: 0;
+
+                        &:hover {
+                            background-color: $color6;
+                            border: 1px solid $color7;
+                        }
+                    }
+                }
+            }
+        }// fin novedades            
+    }
+}
