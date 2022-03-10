@@ -3,7 +3,7 @@
 @media only screen and (max-width:320px) {
     body {
         .header-picado {
-            @import "encabezado";
+            @import "../componentes/encabezado";
             @include encabezado(fondo-picado, 300);
         }
 
@@ -13,6 +13,7 @@
                     display: none;
                 }
             }
+            
         }
 
         .footer {
@@ -24,27 +25,36 @@
 }
 
 @media only screen and (max-width:540px) {
-    main {
-        .picado {
-            .frm-video {
-                .video-picado {
-                    iframe {
-                        width: 300px;
-                        height: 315px;
+    body {
+        main {
+            .picado {
+                .frm-video {
+                    .video-picado {
+                        iframe {
+                            width: 300px;
+                            height: 315px;
+                        }
                     }
                 }
             }
+
+            .container {
+                .grid-ubicacion {
+                    h1 {
+                        font-size: $m;
+                    }
+
+                    h2 {
+                        font-size: $s;
+                    }
+                }
+            }
+            
         }
 
-        .container {
-            .grid-ubicacion {
-                h1 {
-                    font-size: $m;                  
-                }
-
-                h2 {
-                    font-size: $s;
-                }
+        .footer {
+            .about-company {
+                display: none;
             }
         }
     }
@@ -67,22 +77,22 @@
         }
 
         .header-silo {
-            @import "encabezado";
+            @import "../componentes/encabezado";
             @include encabezado(fondo-silo, 600);
         }
 
         .header-mercado {
-            @import "encabezado";
+            @import "../componentes/encabezado";
             @include encabezado(fondo-mercado, 500);
         }
 
         .header-picado {
-            @import "encabezado";
+            @import "../componentes/encabezado";
             @include encabezado(fondo-picado, 500);
         }
 
         .header-personal {
-            @import "encabezado";
+            @import "../componentes/encabezado";
             @include encabezado(fondo-personal-tablet, 500);
         }
 
@@ -98,7 +108,7 @@
         }
 
         .header-ubicacion {
-            @import "encabezado";
+            @import "../componentes/encabezado";
             @include encabezado(fondo-ubicacion-movil, 400);
         }
     }

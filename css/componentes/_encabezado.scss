@@ -30,8 +30,7 @@
 // barra del menú en todas las páginas 
 @mixin barra-menu {
     .navbar-index {
-        background-color: $color1;
-
+        background-color: $color1;             
         .navbar-nav, .nav-link{
             a {
                 color: $color-blanco ;

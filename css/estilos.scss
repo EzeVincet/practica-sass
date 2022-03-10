@@ -1,9 +1,9 @@
 // Dentro de variables se encuentra la paleta de colores y las fuentes
-@import "variables";
-@import "reset";
-@import "body";
-@import "main";
-@import "encabezado";
+@import "base/variables";
+@import "base/reset";
+@import "componentes/body";
+@import "componentes/main";
+@import "componentes/encabezado";
 // /* -----------------header  index---------------*/
 // encabezado, text-hero y barra-menu se encuentra en encabezado.scss
 .header-index {    
@@ -47,5 +47,5 @@
    @include barra-menu;
 }
 
-@import "footer";
-@import "medias";
+@import "componentes/footer";
+@import "base/medias";
