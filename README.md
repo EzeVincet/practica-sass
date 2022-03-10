@@ -37,6 +37,8 @@ está orientada al rubro agropecuario.
 ## SEO
 A continuación dejo los description y keywords de cada una de las páginas
 
+Se utiliza **Open Graph** para controlar como se muestra el contenido compartido en *Facebook*. 
+
 ## ▶index.html
 
 En la **descripción** hago referencia a la ubicación geográfica y una invitación a ver los servicios que se ofrecen.
