@@ -55,9 +55,10 @@
                 color: $color-blanco ;
                 background-color: $color2;
                 box-shadow: 10px 9px 20px 0px $color-shadow;
-
+                border-radius: 5%;
+                border-color: lighten($color2, 10%);
                 a:hover {
-                    background-color: $color6;
+                    background-color: lighten ($color8, 50%);                                       
                 }
             }
         }

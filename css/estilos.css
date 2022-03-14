@@ -22,6 +22,10 @@ body h3 {
   font-family: "IBM Plex Serif", serif;
 }
 
+body p {
+  font-size: 1.2rem;
+}
+
 main .picado .text-picado .text-center, main .container .text-center, .main .novedades .text-center {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -62,55 +66,87 @@ main .picado .frm-video h3 {
   font-size: 1.5rem;
 }
 
-main .picado .frm-video .contacto-grid {
-  margin-bottom: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-top: 4rem;
+main .picado .frm-video .contacto-picado .contact-form {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 400px;
+  -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+          box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
 }
 
-main .picado .frm-video .contacto-grid label {
-  margin-top: 0.5rem;
+main .picado .frm-video .contacto-picado .contact-form .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-main .picado .frm-video .contacto-grid input {
-  margin-bottom: 0.5rem;
+main .picado .frm-video .contacto-picado .contact-form .description {
+  color: #aeb4b9;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
-main .picado .frm-video .contacto-grid .inp-form:hover {
+main .picado .frm-video .contacto-picado .contact-form .form-input {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+main .picado .frm-video .contacto-picado .contact-form .form-control::-webkit-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+main .picado .frm-video .contacto-picado .contact-form .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+main .picado .frm-video .contacto-picado .contact-form .form-control::-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+main .picado .frm-video .contacto-picado .contact-form .form-control::placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+main .picado .frm-video .contacto-picado .contact-form .form-control:focus {
+  border-color: #0d7c0a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #0d7c0a;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #0d7c0a;
+}
+
+main .picado .frm-video .contacto-picado .contact-form textarea {
+  resize: none;
+}
+
+main .picado .frm-video .contacto-picado .contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+main .picado .frm-video .contacto-picado .contact-form .submit-button-wrapper input {
   border: none;
-  background: #0d7c0a;
+  border-radius: 4px;
+  background-color: #265a24;
   color: #ffffff;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
-main .picado .frm-video .contacto-grid .inp-form:focus {
-  border: none;
-  background: #265a24;
-  color: #ffffff;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  position: relative;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-main .picado .frm-video .contacto-grid .btn-formulario input {
-  background: #265a24;
-  color: #ffffff;
-  padding: 0.7rem;
+main .picado .frm-video .contacto-picado .contact-form .submit-button-wrapper input:hover {
+  background-color: #0d7c0a;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 }
 
 main .container .text-center {
@@ -181,24 +217,87 @@ main .personal-list .list-group-item p {
   text-align: justify;
 }
 
-main .contacto-contenedor h1 {
+main .contacto-contenedor .contenedor {
+  color: #3b5a41;
+  line-height: 1.5;
+  max-width: 1170px;
+  margin: 0 auto 1rem;
+  padding: 1.5rem;
+}
+
+main .contacto-contenedor .contenedor h1 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
-main .contacto-contenedor h2 {
+main .contacto-contenedor .contenedor h2 {
   font-size: 1.3rem;
+  text-align: center;
 }
 
-main .contacto-contenedor .contacto-frm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: #48af445d;
+main .contacto-contenedor .contenedor .info-empresa {
+  padding: 1rem;
+  background-color: #bfd5c3;
+}
+
+main .contacto-contenedor .contenedor .info-empresa .servicios {
+  list-style: none;
+  text-align: left;
+}
+
+main .contacto-contenedor .contenedor .contacto {
+  padding: 1rem;
+  background-color: #dee9e0;
+}
+
+main .contacto-contenedor .contenedor .contacto h3 {
+  margin-bottom: 1rem;
+}
+
+main .contacto-contenedor .contenedor .formulario {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1.25rem;
+}
+
+main .contacto-contenedor .contenedor .formulario label {
+  display: block;
+}
+
+main .contacto-contenedor .contenedor .formulario button,
+main .contacto-contenedor .contenedor .formulario input,
+main .contacto-contenedor .contenedor .formulario textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #bfd5c3;
+}
+
+main .contacto-contenedor .contenedor .formulario textarea {
+  resize: none;
+}
+
+main .contacto-contenedor .contenedor .formulario .full {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+main .contacto-contenedor .contenedor .formulario .full .boton-enviar {
+  background-color: #bfd5c3;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main .contacto-contenedor .contenedor .formulario .full .boton-enviar:focus, main .contacto-contenedor .contenedor .formulario .full .boton-enviar:hover {
+  background-color: #3b5a41;
+  color: #fff;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 .header-index {
@@ -261,10 +360,12 @@ main .contacto-contenedor .contacto-frm {
   background-color: #265a24;
   -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
           box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+  border-radius: 5%;
+  border-color: #357e33;
 }
 
 .header-index .navbar-index .navbar-nav .dropdown-menu a:hover, .header-index .navbar-index .nav-link .dropdown-menu a:hover {
-  background-color: #0d7c0a;
+  background-color: lighten #48af445d, 50%;
 }
 
 .main {
@@ -304,6 +405,7 @@ main .contacto-contenedor .contacto-frm {
 
 .main .novedades .row p {
   text-align: justify;
+  margin: 0.5rem;
 }
 
 .main .novedades .jumbotron {
@@ -356,9 +458,18 @@ main .contacto-contenedor .contacto-frm {
   border: 0;
 }
 
-.main .novedades .card-silo .card-block .btn-silo:hover {
-  background-color: #0d7c0a;
-  border: 1px solid #8bf85f;
+.main .novedades .card-silo .card-block .btn-silo:focus, .main .novedades .card-silo .card-block .btn-silo:hover {
+  background-color: #12ab0e;
+  color: black;
+  font-weight: 500;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  outline: 0;
+}
+
+.main .novedades .card-silo .card-block h4 {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .header-silo {
@@ -421,10 +532,12 @@ main .contacto-contenedor .contacto-frm {
   background-color: #265a24;
   -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
           box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+  border-radius: 5%;
+  border-color: #357e33;
 }
 
 .header-silo .navbar-index .navbar-nav .dropdown-menu a:hover, .header-silo .navbar-index .nav-link .dropdown-menu a:hover {
-  background-color: #0d7c0a;
+  background-color: lighten #48af445d, 50%;
 }
 
 .header-picado {
@@ -464,10 +577,12 @@ main .contacto-contenedor .contacto-frm {
   background-color: #265a24;
   -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
           box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+  border-radius: 5%;
+  border-color: #357e33;
 }
 
 .header-picado .navbar-index .navbar-nav .dropdown-menu a:hover, .header-picado .navbar-index .nav-link .dropdown-menu a:hover {
-  background-color: #0d7c0a;
+  background-color: lighten #48af445d, 50%;
 }
 
 .header-mercado {
@@ -530,10 +645,12 @@ main .contacto-contenedor .contacto-frm {
   background-color: #265a24;
   -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
           box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+  border-radius: 5%;
+  border-color: #357e33;
 }
 
 .header-mercado .navbar-index .navbar-nav .dropdown-menu a:hover, .header-mercado .navbar-index .nav-link .dropdown-menu a:hover {
-  background-color: #0d7c0a;
+  background-color: lighten #48af445d, 50%;
 }
 
 .header-personal {
@@ -596,10 +713,12 @@ main .contacto-contenedor .contacto-frm {
   background-color: #265a24;
   -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
           box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+  border-radius: 5%;
+  border-color: #357e33;
 }
 
 .header-personal .navbar-index .navbar-nav .dropdown-menu a:hover, .header-personal .navbar-index .nav-link .dropdown-menu a:hover {
-  background-color: #0d7c0a;
+  background-color: lighten #48af445d, 50%;
 }
 
 .header-ubicacion {
@@ -662,10 +781,12 @@ main .contacto-contenedor .contacto-frm {
   background-color: #265a24;
   -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
           box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+  border-radius: 5%;
+  border-color: #357e33;
 }
 
 .header-ubicacion .navbar-index .navbar-nav .dropdown-menu a:hover, .header-ubicacion .navbar-index .nav-link .dropdown-menu a:hover {
-  background-color: #0d7c0a;
+  background-color: lighten #48af445d, 50%;
 }
 
 .header-contacto .navbar-index {
@@ -696,10 +817,12 @@ main .contacto-contenedor .contacto-frm {
   background-color: #265a24;
   -webkit-box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
           box-shadow: 10px 9px 20px 0px rgba(14, 28, 23, 0.64);
+  border-radius: 5%;
+  border-color: #357e33;
 }
 
 .header-contacto .navbar-index .navbar-nav .dropdown-menu a:hover, .header-contacto .navbar-index .nav-link .dropdown-menu a:hover {
-  background-color: #0d7c0a;
+  background-color: lighten #48af445d, 50%;
 }
 
 body .footer {

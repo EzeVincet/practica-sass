@@ -80,24 +80,46 @@
     <!-- --------------------MAIN -------------------------- -->
     <main>
         <section class="container contacto-contenedor">
-            <h1>Contacto</h1>
-            <h2>Escribinos aquí <i class="fa-solid fa-arrow-turn-down"></i></h2>
-            <div class="contacto-frm wow animate__animated animate__backInDown">
-                <!-- formulario de contacto -->
-                <form action="paginaweb.php" method="post">
-                    <p><label for="nombre_apellido">Nombre:</label></p>
-                    <input class="inp-form" type="text" name="nombre_apellido" placeholder="Escriba su nombre">
-                    <p><label for="nombre_apellido">Apellido:</label></p>
-                    <input class="inp-form" type="text" name="nombre_apellido" placeholder="Escriba su apellido">
-                    <p><label for="email">Email:</label></p>
-                    <input class="inp-form" type="email" name="email" placeholder="nombre@ejemplo.com">
-                    <p><label for="caja">Escriba su comentario</label></p>
-                    <textarea name="caja" id="" cols="30" rows="10"></textarea>
-                    <p class="btn-formulario"><input type="reset" value="Limpiar" id="">
-                        <input type="submit" value="Enviar" id="">
-                    </p>
-                </form>
-                <!-- fin del formulario -->
+            <div class="contenedor">
+                <div class="animate__animated animate__backInLeft">
+                    <div class="info-empresa">
+                        <h1>Formulario</h1>
+                        <h2>Cooperativa de Tamberos</h2>
+                        <ul class="servicios">
+                            <li><i class="fa fa-map-marker"></i> Calle Anzoategui 188 esquina José María Blanco</li>
+                            <li><i class="fa fa-mobile"></i> (03388)4902080</li>
+                            <li><i class="fa fa-envelope"></i> tamberosch@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="contacto">
+                        <h3>Enviar Correo</h3>
+                        <form class="formulario">
+                            <p>
+                                <label>Nombre</label>
+                                <input type="text" name="nombre" required>
+                            </p>
+                            <p>
+                                <label>Apellido</label>
+                                <input type="text" name="apellido">
+                            </p>
+                            <p>
+                                <label>Correo</label>
+                                <input type="email" name="email" required>
+                            </p>
+                            <p>
+                                <label>Teléfono</label>
+                                <input type="text" name="teléfono" required>
+                            </p>
+                            <p class="full">
+                                <label>Mensaje</label>
+                                <textarea name="mensaje" required></textarea>
+                            </p>
+                            <p class="full">
+                                <button class="boton-enviar">Enviar</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

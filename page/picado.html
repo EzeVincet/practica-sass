@@ -99,27 +99,26 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div>
-                    <h3>Solicite turno aquí</h3>
-                    <hr>
-                    <div class="contacto-grid">
-                        <!-- formulario de contacto -->
-                        <form action="paginaweb.php" method="post">
-                            <p><label for="nombre_apellido">Nombre:</label></p>
-                            <input class="inp-form" type="text" name="nombre_apellido" placeholder="Escriba su nombre">
-                            <p><label for="nombre_apellido">Apellido:</label></p>
-                            <input class="inp-form" type="text" name="nombre_apellido"
-                                placeholder="Escriba su apellido">
-                            <p><label for="email">Email:</label></p>
-                            <input class="inp-form" type="email" name="email" placeholder="nombre@ejemplo.com">
-                            <p><label for="caja">Escriba su comentario</label></p>
-                            <textarea name="caja" id="" cols="30" rows="10"></textarea>
-                            <p class="btn-formulario"><input type="reset" value="Limpiar" id="">
-                                <input type="submit" value="Enviar" id="">
-                            </p>
-                        </form>
-                        <!-- fin del formulario -->
-                    </div>
+                <div class="contacto-picado">
+                    <form action="#" method="post" class="contact-form">
+                        <h3 class="title">Contáctenos</h3>
+                        <p class="description">Reserve su turno aquí</p>
+                        <div>
+                            <input type="text" class="form-control rounded border-white mb-3 form-input" id="name"
+                                placeholder="Nombre" required>
+                        </div>
+                        <div>
+                            <input type="tel" class="form-control rounded border-white mb-3 form-input"
+                                placeholder="Teléfono" required>
+                        </div>
+                        <div>
+                            <textarea id="mensaje" class="form-control rounded border-white mb-3 form-input"
+                                rows="5" cols="30" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <div class="submit-button-wrapper">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
             </section>
             <!--fin seccion frm-video-->
